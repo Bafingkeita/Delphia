@@ -9,21 +9,26 @@
     <script src='main.js'></script>
 </head>
 <body class="bg-grey-200">
-    <form class="rounded mx-auto " action="">
+    <form class="rounded mx-auto" action="" style="width: 500px;">
         <!--QUESTION 1 TEXT -->
         <label  for="Q1">Quel est votre objectif principal en matière d'investissement ?</label>
-        <br>
         <input  class="border rounded" type="text" name="Q1" id="Q1">
         <!--QUESTION 2 RADIO -->
-         <br>
-         <br>
-         <label for="Q2">Quelle est votre expérience en investissement ? </label>
-         <br>
-         <input class="ml-4" type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Débutant</label>
-         <br>
-         <input type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Intermédiaire</label>
-         <br>
-         <input type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Avancé</label>
+         <fieldset id="q2" class="">
+            <legend>Quelle est votre expérience en investissement ? </legend>
+            <div>
+                <input type="radio" name="experience" id="beginner">
+                <label for="beginner">Débutant</label>
+            </div>
+            <div>
+                <input type="radio" name="experience" id="intermediate">
+                <label for="intermediate">Intermédiaire</label>
+            </div>
+            <div>
+                <input type="radio" name="experience" id="advanced">
+                <label for="advanced">Avancé</label>
+            </div>
+         </fieldset>
         <!--QUESTION 3 RADIO -->
          <br>
          <br>
@@ -117,7 +122,7 @@
         </label>
         
 
-
+        
     </form>
 
 </body>
