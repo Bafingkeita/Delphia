@@ -9,116 +9,165 @@
     <script src='main.js'></script>
 </head>
 <body class="bg-grey-200">
-    <form class="rounded mx-auto bg-red-500  " action="" style="width: 500px;">
+    <form class="rounded mx-auto " action="">
         <!--QUESTION 1 TEXT -->
-        <label  for="Q1">Quel est votre objectif principal en matière d'investissement ?</label>
-        <br>
-        <input  class="border rounded" type="text" name="Q1" id="Q1">
+        <legend>Quel est votre objectif principal en matière d'investissement ?</legend>
+        <input  class="border rounded" type="text" name="goal" id="investissement">
         <!--QUESTION 2 RADIO -->
-         <br>
-         <br>
-         <label for="Q2">Quelle est votre expérience en investissement ? </label>
-         <br>
-         <input class="ml-4" type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Débutant</label>
-         <br>
-         <input type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Intermédiaire</label>
-         <br>
-         <input type="radio" name="Q2" id="Q2"> <label for="Q2"><label>Avancé</label>
-        <!--QUESTION 3 RADIO -->
-         <br>
-         <br>
-         <label for="Q3">Quel est votre horizon de placement ?</label>
-         <br>
-         <input type="radio" name="Q3" id="Q3"> <label for="Q3"> <label>Court terme : 1 an </label>
-         <br>
-         <input type="radio" name="Q3" id="Q3"> <label for="Q3"> <label>Moyen terme : 1-5 ans </label>
-         <br>
-         <input type="radio" name="Q3" id="Q3"> <label for="Q3"> <label>Long terme : >5 ans </label>
-        <!--QUESTION 4 RADIO -->
-         <br>
-         <br>
-         <label for="Q4">Quel type d'investisseur êtes-vous ?</label>
-         <br>
-         <br>
-         <input type="radio" name="Q4" id="Q4"> <label for="Q4"><label> Conservateur (Faible risque, rendement stable) </label>
-         <br>
-         <input type="radio" name="Q4" id="Q4"> <label for="Q4"><label> Modéré (Équilibre entre risque et rendement) </label>
-         <br>
-         <input type="radio" name="Q4" id="Q4"> <label for="Q4"><label> Agressif (Prêt à prendre des risques pour des rendements élevés) </label>
-         
-         <br>
-         <br>
-         <!--QUESTION 5 RADIO -->
-         <label for="Q5">Quelle est votre réaction face à une perte de 20 %  sur votre portefeuille en quelques mois ?</label>
-        <br>
-         <br>
-         <input type="radio" name="Q5" id="Q5"> <label for="Q5"> <label>Je vends immédiatement pour limiter les pertes </label>
-         <br>
-         <input type="radio" name="Q5" id="Q5"> <label for="Q5"> <label>J'attends et j'évalue la situation </label>
-         <br>
-         <input type="radio" name="Q5" id="Q5"> <label for="Q5"><label> J'achète plus pour profiter des prix bas </label>
+         <fieldset id="q2" class="p">
+            <legend>Quelle est votre expérience en investissement ? </legend>
+            <div class="">
+                <input type="radio" name="experience" id="beginner">
+                <label for="beginner">Débutant</label>
+            </div>
+            <div class="">
+                <input type="radio" name="experience" id="intermediate">
+                <label for="intermediate">Intermédiaire</label>
+            </div>
+            <div>
+                <input type="radio" name="experience" id="advanced">
+                <label for="advanced">Avancé</label>
+            </div>
+         </fieldset>
 
-            <br>
-            <br>
+        <!--QUESTION 3 RADIO -->
+        <fieldset id="Q3" class=""> 
+            <legend>Quel est votre horizon de placement ?</legend>
+            <div class="">
+                <input type="radio" name="Q3" id="Q3"> 
+                <label for="Q3"> Court terme : 1 an </label>
+            </div>
+            <div class="">
+                <input type="radio" name="Q3" id="Q3"> 
+                <label for="Q3"> Moyen terme : 1-5 ans </label>
+            </div>
+            <div class="">
+                <input type="radio" name="Q3" id="Q3">
+                 <label for="Q3"> Long terme : >5 ans </label>
+            </div>
+            
+        </fieldset>
+        <!--QUESTION 4 RADIO -->
+        <fieldset id="4" class="">
+            <legend>Quel type d'investisseur êtes-vous ?</legend>
+            <div >
+                 <input type="radio" name="Q4" id="Q4"> 
+                 <label for="Q4"> Conservateur (Faible risque, rendement stable) </label>
+            </div>
+            <div>
+                <input type="radio" name="Q4" id="Q4"> 
+                <label for="Q4">Modéré (Équilibre entre risque et rendement) </label>
+            </div>
+            <div>
+                <input type="radio" name="Q4" id="Q4"> 
+                <label for="Q4"> Agressif (Prêt à prendre des risques pour des rendements élevés) </label>
+            </div>
+            
+        </fieldset>
+        
+         <!--QUESTION 5 RADIO -->
+         <fieldset id="5" class="">
+            <legend>Quelle est votre réaction face à une perte de 20 %  sur votre portefeuille en quelques mois ?</legend>
+            <div>
+                <input type="radio" name="Q5" id="Q5"> 
+                <label for="Q5"> Je vends immédiatement pour limiter les pertes </label>
+            </div>
+            <div>
+                <input type="radio" name="Q5" id="Q5"> 
+                <label for="Q5"> J'attends et j'évalue la situation </label>
+            </div>
+            <div>
+                <input type="radio" name="Q5" id="Q5">
+                 <label for="Q5"> J'achète plus pour profiter des prix bas </label>
+            </div>
+        
+        </fieldset>
 
             <!--QUESTION 6 CHOIX MULTIPLES -->
-        <label for="Q6">Quels secteurs vous intéressent le plus ?</label>
-        <br>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Technologie </label>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Santé </label>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Énergies renouvelables</label>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Immobilier</label>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Consommation</label>
-        <br>
-        <input type="checkbox" name="Q6" id="Q6"><label>Finance</label>
+            <fieldset id="6" class="">
+                <legend>Quels secteurs vous intéressent le plus ?</legend>
+         <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Technologie </label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Santé </label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Énergies renouvelables</label>
+        </div>
         
-        <br>
-        <br>
+
+        <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Immobilier</label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Consommation</label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q6" id="Q6">
+                <label>Finance</label>
+        </div>
+         
+            </fieldset>
+
         <!--QUESTION 7 CHOIX MULTIPLES -->
-        <label for="Q7">Quels secteurs vous intéressent le plus ?</label>
-        <br>
-        <br>
-        <input type="checkbox" name="Q7" id="Q7"><label>Buy & Hold (Achat long terme)</label>
-        <br>
-        <input type="checkbox" name="Q7" id="Q7"><label>Trading actif (Court terme)</label>
-        <br>
-        <input type="checkbox" name="Q7" id="Q7"><label>ETF et fonds indiciels</label>
-        <br>
-        <input type="checkbox" name="Q7" id="Q7"><label>Stock picking (Sélection individuelle d'actions)</label>
-        <br>
+
+        <fieldset id="7" class="">
+        <legend>Quels secteurs vous intéressent le plus ?</legend>
+        
+        <div>
+                <input type="checkbox" name="Q7" id="Q7">
+                <label>Buy & Hold (Achat long terme)</label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q7" id="Q7">
+                <label>Trading actif (Court terme)</label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q7" id="Q7">
+                <label>ETF et fonds indiciels</label>
+        </div>
+        <div>
+                <input type="checkbox" name="Q7" id="Q7">
+                <label>Stock picking (Sélection individuelle d'actions)</label>
+        </div>
+        </fieldset>
+        
         
 
-        <br>
-        <label for="Q8">Décrivez votre tolérance au risque et votre vision des marchés financiers.</label>
-        <br>
-        <br>
-        <textarea class="border rounded " name="Q8" id="" cols="30" rows="10"></textarea>
+        
+        <legend>Décrivez votre tolérance au risque et votre vision des marchés financiers.</legend>
+        
+        <div>
+                <textarea class="border rounded " name="Q8" id="" cols="30" rows="10"></textarea>
+        </div>
 
-        <br>
-        <br>
-        <br>
+        
 
-        <label for="Q9">Avez-vous des critères spécifiques pour sélectionner vos investissements ? (Exemple : ESG, Valeur de l'entreprise, religion)</label>
-        <br>
-        <br>
-        <textarea class="border rounded " name="Q9" id="" cols="30" rows="10"></textarea>
+        <legend>Avez-vous des critères spécifiques pour sélectionner vos investissements ? (Exemple : ESG, Valeur de l'entreprise, religion)</legend>
 
-        <br>
-        <br>
+        <div>
+                <textarea class="border rounded " name="Q9" id="" cols="30" rows="10"></textarea>
+        </div>
 
+        
         <label for="Switch">
-            <input type="checkbox"><label for="Switch">Souhaitez-vous recevoir des recommandations personnalisées basées sur votre profil ?</label>
+            <div>
+                <input type="checkbox">
+                <label for="Switch">Souhaitez-vous recevoir des recommandations personnalisées basées sur votre profil ?</label>
+            </div>
             <span class="slider rounded"></span>
         </label>
         
 
-
+        
     </form>
 
+    
 </body>
 </html>
